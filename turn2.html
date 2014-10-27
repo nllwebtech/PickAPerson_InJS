@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+	<title> Who's Turn Is It?</title>
+
+	<link rel="stylesheet" type="text/css" href="turnTurnTurn.css">
+</head>
+
+<body>
+
+<header>
+<h1>Who's Turn Is It?! </h1>
+<p>Here's An Easier Way To Pick Between 2 People or Volunteer One of Two Friends To Do Something!</p>
+</header>
+<h2>Pick A Number between <strong> 1 and 5 </strong>
+
+
+
+
+
+
+<script type="text/javascript">
+
+var compare = function (computerRandom, person1, person2){
+	var computerRandom = Math.floor((Math.random() * 5) + 1);
+	
+    
+    var person1 = prompt("Person 1: Pick a number between 1 and 5.");
+	var person2 = prompt("Person 2: Pick a different number between 1 and 5." );
+	
+	
+	if (person1 === person2){
+		document.write( "It's a tie! Have another guess.");
+	}
+	
+	if (person1 == computerRandom){
+		alert("Person 1 Wins!!!");
+	}
+	  else if (person2 == computerRandom){
+	  	alert("Person 2 Wins!!!");
+	  } else{
+	  	document.write("<br /> No one wins. Try Again.")
+	  }
+	  
+		
+	alert(" computer choice is " + computerRandom);
+	
+	
+
+}
+compare();
+
+
+
+
+
+</script>
+
+<footer>
+<small> 2014 <a href="mailto:nicole@hirenicolell.info">Nicole L.L.</a> </small>
+</footer>
+
+</body>
+</html>
